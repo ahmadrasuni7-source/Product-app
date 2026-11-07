@@ -1,0 +1,57 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: system-ui, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+}
+
+.header {
+  background: #2f80ed;
+  color: #fff;
+  padding: 16px;
+  text-align: center;
+}
+
+.container { max-width: 1000px; margin: 0 auto; padding: 16px; }
+
+.filters { display: flex; gap: 8px; margin-bottom: 16px; }
+
+.filters input,
+.filters select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.filters input { flex: 1; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px;
+  text-align: center;
+}
+
+.card img { width: 100%; border-radius: 8px; }
+.card h3 { font-size: 14px; margin: 8px 0; }
+.card button {
+  margin-top: 8px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  background: #2f80ed;
+  color: #fff;
+}
+
+.cart { background: #fff; border-radius: 12px; padding: 16px; margin-top: 16px; }
+.cart li { display: flex; justify-content: space-between; align-items: center;
+           gap: 8px; padding: 8px 0; border-bottom: 1px solid #eee; list-style: none; }
+.cart button { border: none; background: #e55353; color: #fff;
+               padding: 6px 10px; border-radius: 6px; }
